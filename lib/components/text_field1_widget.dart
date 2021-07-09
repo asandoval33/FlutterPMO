@@ -4,12 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TextField1Widget extends StatefulWidget {
-  TextField1Widget({
-    Key key,
-    this.type,
-  }) : super(key: key);
-
-  final String type;
+  TextField1Widget({Key key}) : super(key: key);
 
   @override
   _TextField1WidgetState createState() => _TextField1WidgetState();
