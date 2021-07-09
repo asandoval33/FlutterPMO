@@ -1,3 +1,4 @@
+import '../components/text_field1_widget.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import '../flutter_flow/flutter_flow_widgets.dart';
@@ -18,7 +19,6 @@ class _AgregarEmpresaWidgetState extends State<AgregarEmpresaWidget> {
   TextEditingController textController3;
   TextEditingController textController4;
   TextEditingController textController5;
-  TextEditingController textController6;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
@@ -29,7 +29,6 @@ class _AgregarEmpresaWidgetState extends State<AgregarEmpresaWidget> {
     textController3 = TextEditingController();
     textController4 = TextEditingController();
     textController5 = TextEditingController();
-    textController6 = TextEditingController();
   }
 
   @override
@@ -102,73 +101,7 @@ class _AgregarEmpresaWidgetState extends State<AgregarEmpresaWidget> {
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Padding(
-                          padding: EdgeInsets.fromLTRB(40, 0, 40, 20),
-                          child: Container(
-                            width: double.infinity,
-                            height: 50,
-                            decoration: BoxDecoration(
-                              color: Color(0x65EEEEEE),
-                              borderRadius: BorderRadius.circular(25),
-                            ),
-                            child: Container(
-                              width: 285,
-                              height: 40,
-                              child: Stack(
-                                children: [
-                                  Align(
-                                    alignment: Alignment(0.95, 0),
-                                    child: Icon(
-                                      Icons.settings_outlined,
-                                      color: Color(0x00EEEEEE),
-                                      size: 24,
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
-                                    child: TextFormField(
-                                      controller: textController1,
-                                      obscureText: false,
-                                      decoration: InputDecoration(
-                                        hintText: 'Nombre Empresa',
-                                        hintStyle: GoogleFonts.getFont(
-                                          'Roboto',
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.normal,
-                                        ),
-                                        enabledBorder: UnderlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0x00000000),
-                                            width: 1,
-                                          ),
-                                          borderRadius: const BorderRadius.only(
-                                            topLeft: Radius.circular(4.0),
-                                            topRight: Radius.circular(4.0),
-                                          ),
-                                        ),
-                                        focusedBorder: UnderlineInputBorder(
-                                          borderSide: BorderSide(
-                                            color: Color(0x00000000),
-                                            width: 1,
-                                          ),
-                                          borderRadius: const BorderRadius.only(
-                                            topLeft: Radius.circular(4.0),
-                                            topRight: Radius.circular(4.0),
-                                          ),
-                                        ),
-                                      ),
-                                      style: GoogleFonts.getFont(
-                                        'Roboto',
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.normal,
-                                      ),
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
+                        TextField1Widget(),
                         Padding(
                           padding: EdgeInsets.fromLTRB(40, 0, 40, 20),
                           child: Container(
@@ -194,7 +127,7 @@ class _AgregarEmpresaWidgetState extends State<AgregarEmpresaWidget> {
                                   Padding(
                                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                                     child: TextFormField(
-                                      controller: textController2,
+                                      controller: textController1,
                                       obscureText: false,
                                       decoration: InputDecoration(
                                         hintText: 'Descripción',
@@ -238,6 +171,7 @@ class _AgregarEmpresaWidgetState extends State<AgregarEmpresaWidget> {
                             ),
                           ),
                         ),
+                        TextField1Widget(),
                         Padding(
                           padding: EdgeInsets.fromLTRB(40, 0, 40, 20),
                           child: Container(
@@ -263,7 +197,7 @@ class _AgregarEmpresaWidgetState extends State<AgregarEmpresaWidget> {
                                   Padding(
                                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                                     child: TextFormField(
-                                      controller: textController3,
+                                      controller: textController2,
                                       obscureText: false,
                                       decoration: InputDecoration(
                                         hintText: 'Teléfono',
@@ -331,7 +265,7 @@ class _AgregarEmpresaWidgetState extends State<AgregarEmpresaWidget> {
                                   Padding(
                                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                                     child: TextFormField(
-                                      controller: textController4,
+                                      controller: textController3,
                                       obscureText: false,
                                       decoration: InputDecoration(
                                         hintText: 'Dirección',
@@ -398,7 +332,7 @@ class _AgregarEmpresaWidgetState extends State<AgregarEmpresaWidget> {
                                   Padding(
                                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                                     child: TextFormField(
-                                      controller: textController5,
+                                      controller: textController4,
                                       obscureText: false,
                                       decoration: InputDecoration(
                                         hintText: 'Estado',
@@ -465,7 +399,7 @@ class _AgregarEmpresaWidgetState extends State<AgregarEmpresaWidget> {
                                   Padding(
                                     padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                                     child: TextFormField(
-                                      controller: textController6,
+                                      controller: textController5,
                                       obscureText: false,
                                       decoration: InputDecoration(
                                         hintText: 'Tipo Empresa',
